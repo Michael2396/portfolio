@@ -1,0 +1,46 @@
+table{
+    border: 1px solid black;
+}
+tr{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+.overlay{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(133,133,133,0.9);
+    display: none;
+}
+.pop-up{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    left: 40%;
+    background: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+input{
+    display: block;
+    margin: auto;
+}
+#open-button{
+    margin-top: 25px;
+}
+#button-submit{
+    margin-top: 15px;
+    height: 30px;
+    width: 150px;
+    background: green;
+    border: 0;
+    border-radius: 10%;
+}

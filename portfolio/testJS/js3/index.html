@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = ['5', '1', '5'];
+
+    function handler() {
+        var action = prompt('ENTER ACTION: 1-ADD,2-REFRESH,3-EXIT,4-showList');
+        action = parseInt(action);
+        switch (action) {
+            case 1:
+                addArray();
+                break;
+            case 2:
+                refresh();
+                break;
+            case 3:
+                console.log(arr);
+                break;
+            case 4:
+                show();
+                break;
+            default:
+                alert('error');
+                break;
+        }
+    }
+
+    function addArray() {
+        arr[arr.length] = prompt('ENTER VALUE(FUNCTION ADD)');
+        handler();
+    }
+
+    function changeArray(data) {
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] === data) {
+                arr[i] = prompt('ENTER VALUE(FUNCTION CHANGE)');
+                handler();
+                break;
+            }
+        }
+    }
+
+    function refresh() {
+        var data = prompt('ENTER VALUE');
+        var check = false;
+        for (var i = 0; i < arr.length; i++) {
+            if (data === arr[i]) {
+                changeArray(data);
+                check = true;
+            }
+        }
+        if (!check) {
+            addArray();
+        }
+    }
+
+    function show() {
+        for (var i = 0; i < arr.length; i++) {
+            console.log('res= ' + arr[i]);
+        }
+
+    }
+
+    handler();
+
+</script>
+</body>
+</html>

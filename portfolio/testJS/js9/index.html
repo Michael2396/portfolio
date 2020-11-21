@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj = {
+        'q': '32b',
+        'w': '54v',
+        'e': 'vc4',
+        'r': 'bvx'
+    };
+
+    function hash(obj) {
+        var arr = [];
+        var userInfo = prompt('enter info');
+        userInfo = userInfo.split('');
+        for (key in obj) {
+            for (var i = 0; i < userInfo.length; i++) {
+                if (userInfo[i] === key) {
+                    arr.push(obj[key])
+                }
+            }
+        }
+        arr = arr.join('');
+        return arr;
+    }
+
+
+
+    function unhash(str, obj) {
+        console.log(str);
+        var arr = [];
+        var res = [];
+
+        for (var i = 0; i < str.length; i++) {
+            arr.push(str.substr(i, 3));
+        }
+
+        for (var i = 0; i < arr.length; i++) {
+            for (key in obj) {
+                if (arr[i] === obj[key]) {
+                    res.push(key)
+                    console.log(res)
+                    // var arr2 = res.reverse();
+                }
+            }
+        }
+        return res;
+    }
+
+    console.log(unhash(hash(obj), obj))
+</script>
+</body>
+</html>

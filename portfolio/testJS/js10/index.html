@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test">
+    <div class="test1">
+        <div class="1"></div>
+    </div>
+    <div class="test2">
+        <div class="2"></div>
+    </div>
+    <div class="test3">
+        <div class="3"></div>
+    </div>
+    <span class="sd"></span>
+    <h1>asd</h1>
+    <p>ssd</p>
+    <p>sds</p>
+</div>
+<script>
+    var obj = {};
+    var id = document.getElementById('test').children;
+    function handler(el) {
+        if (!el) {
+            return
+        }
+        if (typeof el === 'object') {
+            for (var i = 0; i < el.length; i++) {
+                // console.log(el[i].tagName)
+                if (obj[el[i].tagName]) {
+                    obj[el[i].tagName] += 1;
+                } else {
+                    obj[el[i].tagName] = 1;
+                }
+            }
+        }
+    }
+    handler(id);
+    console.log(obj)
+</script>
+</body>
+</html>

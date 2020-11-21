@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var object = {
+        name: 'Anton',
+        age: '33',
+        family: [
+            {
+                type: 'mother',
+                name: 'Sveta',
+                age: '56',
+                family: [
+                    {
+                        type: 'mother',
+                        name: 'Nina',
+                        age: '85',
+                    }, {
+                        type: 'father',
+                        name: 'Igor',
+                        age: '75',
+                    }
+                ]
+            }, {
+                type: 'father',
+                name: 'Andrey',
+                age: '57',
+                family: [
+                    {
+                        type: 'mother',
+                        name: 'Valia',
+                        age: '82',
+                    }, {
+                        type: 'father',
+                        name: 'German',
+                        age: '85',
+                    }
+                ]
+            }
+        ]
+    }
+    var res = 0;
+
+    function resultAge(obj) {
+        if (typeof !obj['age'] === 'number') {
+            res += obj['age'];
+        } else {
+            obj['age'] = parseInt(obj['age']);
+            res += obj['age'];
+        }
+        for (prop in obj) {
+            if (typeof obj === 'object') {
+                if (Array.isArray(obj[prop])) {
+                    obj[prop].forEach(element => {
+                        if (typeof element['age'] === 'number') {
+                            res += element['age']
+                        }
+                        if (typeof element==='object'){
+                            resultAge(element)
+                        }
+                    })
+                }
+            }
+
+        }
+    }
+
+    resultAge(object);
+    console.log(res)
+</script>
+</body>
+</html>

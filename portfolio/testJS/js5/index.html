@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = [1, 1, 2, 3, 3, 7, 2, 10, 11, 10, 11, 2, 5, 8, 12, 3, 2];
+        // var arr = [1, 1, 8, 3, 5, 1, 6, 6, 8, 7];
+        console.log(arr);
+        var arr2 = [];
+        for (var i = 0; i < arr.length; i++) {
+            var bool = false;
+            for (var j = 0; j < arr.length; j++) {
+                if (i !== j && arr[i] === arr[j]) {
+                    bool = true;
+                }
+            }
+            if (!bool) {
+                arr2.push(arr[i])
+            }
+        }
+        console.log(arr2);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,32 @@
+const openButton = document.querySelector('#open-button');
+console.log(openButton);
+const overlay = document.querySelector('.overlay');
+openButton.addEventListener('click', event => {
+    overlay.style.display = 'block';
+    const firstname = document.querySelector('#firstname').value = null;
+    const female = document.querySelector('#female').value = null;
+    const lastname = document.querySelector('#lastname').value = null;
+    const auto = document.querySelector('#auto').value = null;
+    const state = document.querySelector('#state').value = null;
+});
+const buttonSubmit = document.querySelector('#button-submit');
+buttonSubmit.addEventListener('click', event => {
+    const firstname = document.querySelector('#firstname').value;
+    const female = document.querySelector('#female').value;
+    const lastname = document.querySelector('#lastname').value;
+    const auto = document.querySelector('#auto').value;
+    const state = document.querySelector('#state').value;
+    const table = document.querySelector('.table');
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(-1);
+    var cell2 = row.insertCell(-1);
+    var cell3 = row.insertCell(-1);
+    var cell4 = row.insertCell(-1);
+    var cell5 = row.insertCell(-1);
+    cell1.append(firstname);
+    cell2.append(female);
+    cell3.append(lastname);
+    cell4.append(auto);
+    cell5.append(state);
+    overlay.style.display = 'none';
+});

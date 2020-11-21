@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    console.log('start', arr);
+
+    function test(start, end, replace) {
+        var newArr = [];
+        var count = 0;
+        var deleted = start + end;
+        for (var i = 0; i < arr.length; i++) {
+            //  Задание 1
+            if ((start > 0) && (end === undefined) && (replace === undefined)) {
+                if (i <= start) {
+                    newArr[i] = arr[i]
+                }
+            }
+            //Задание 2
+            if ((start > 0) && (end > 0) && (replace === undefined)) {
+                if (i <= start) {
+                    newArr[i] = arr[i];
+                }
+                if (i > deleted) {
+                    newArr[i - end] = arr[i];
+                }
+            }
+            //Задание 3
+            if ((!end) && (start > 0) && (replace > 0)) {
+                if (i <= start) {
+                    newArr[i] = arr[i];
+                }
+                if (i === start + 1) {
+                    newArr[i] = replace;
+                }
+                if (i > start) {
+                    newArr.push(arr[i])
+                }
+            }
+            //Задание 4
+            if ((start > 0) && (end) && (replace !== undefined)) {
+                if (i <= start) {
+                    newArr[i] = arr[i];
+                }
+                if (i === start + 1) {
+                    newArr[i] = replace;
+                }
+                if (i > end + start) {
+                    newArr.push(arr[i]);
+                }
+            }
+        }
+        arr = newArr;
+    }
+
+    test(2);
+    console.log('end', arr)
+</script>
+
+</body>
+</html>

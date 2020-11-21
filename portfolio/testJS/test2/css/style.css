@@ -1,0 +1,42 @@
+p{
+    margin: 0;
+    padding: 3px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+#list_clients {
+    width: 40%;
+    border: 1px solid black;
+    height: 400px;
+    overflow: scroll;
+}
+.client{
+    border: 1px solid black;
+    margin: 4px;
+    display: flex;
+}
+.client-avatar img{
+    height: 100px;
+    width: 100px;
+}
+.client-info{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+#input-search{
+    width: 50%;
+    display: inline-block;
+    margin: 5px auto 5px 20%;
+}
+.list-client-info{
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+}
+.client-avatar{
+    display: inline-block;
+    padding: 10px;
+}

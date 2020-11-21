@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = [5, 2, 7, 1, 2, 9, 7, 3, 6];
+    console.log(arr);
+    for (var i = 1; i < arr.length; i++) {
+        var x = arr[i];
+        j = i - 1;
+        while (x < arr[j]) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = x;
+    }
+    console.log(arr);
+</script>
+</body>
+</html>
