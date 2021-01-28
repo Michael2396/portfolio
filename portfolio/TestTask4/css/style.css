@@ -1,0 +1,359 @@
+.navbar-toggler-icon {
+    color: gray;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.header {
+    background: url("../img/bg-header.jpg");
+    background-size: cover;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+}
+
+.navbar-name {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #f1cdb3;
+    font-family: "Georgia", sans-serif;
+    text-decoration: none;
+}
+
+.navbar-name:hover {
+    color: #f1cdb3;
+    text-decoration: none;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "Arial", sans-serif;
+    display: inline-block;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar-nav li {
+    padding-right: 35px;
+}
+
+.navbar-nav li a:hover {
+    border-bottom: 3px solid #cdcdcd;
+}
+
+.navbar-name-span {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    display: block;
+}
+
+.header-description {
+    padding-top: 14%;
+}
+
+.header-description-h1 {
+    font-size: 44px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-family: "Georgia", sans-serif;
+}
+
+.header-description-p {
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "Arial", sans-serif;
+    line-height: 24px;
+}
+
+.header-description-button {
+    width: 205px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #f1cdb3;
+    border: 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #292929;
+    font-family: "Georgia", sans-serif;
+}
+
+.header-description-button:hover {
+    background-color: #fddcc4;
+}
+
+.about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 250px;
+}
+
+.about-info-h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+}
+
+.about-info-p {
+    font-size: 15px;
+    color: #4c4c4c;
+    font-family: "Arial", sans-serif;
+    line-height: 24px;
+}
+
+.pets {
+    background: #f6f6f6;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.pets-h2 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+}
+
+.as {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.pets-slider {
+    max-width: 820px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.pets-slider-item img {
+    margin: auto;
+    max-height: 270px;
+
+}
+
+.pets-slider-item {
+    text-align: center;
+    background: #fafafa;
+    margin: 10px 10px;
+}
+
+.pets-slider-item-span {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+}
+
+.pets-slider-item-button {
+    width: 188px;
+    height: 52px;
+    border-radius: 26px;
+    border: 2px solid #f1cdb3;
+    background: #fafafa;
+}
+
+.pets-slider-item-button:hover {
+    background-color: #f1cdb3;
+}
+
+.pets-slider-button {
+    width: 267px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #f1cdb3;
+    border: 2px solid #f1cdb3;
+    margin: auto;
+    display: block;
+}
+
+.help {
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.help-h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    text-align: center;
+}
+
+.help-description {
+    text-align: center;
+}
+
+.help-description img {
+    color: #f1cdb3;
+    display: block;
+    margin: auto;
+}
+
+.help-description-item {
+    padding-top: 50px;
+}
+
+.donation {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #f6f6f6;
+}
+
+.donation-dog-img img {
+    width: 100%;
+}
+
+.donation-description-h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+}
+
+.donation-description-span {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #545454;
+    font-family: "Georgia", sans-serif;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.donation-description-p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #b2b2b2;
+    font-style: italic;
+    font-family: "Arial", sans-serif;
+    padding-top: 25px;
+}
+
+.donation-card {
+    padding: 0 10px;
+    background: #f1cdb3;
+    max-width: 319px;
+    height: 47px;
+    border-radius: 9px;
+
+}
+
+.donation-card-span {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: #292929;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer {
+    padding-top: 70px;
+    background: url("../img/bg-footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-location-h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    color: #ffffff;
+    font-family: "Georgia", sans-serif;
+    text-align: left;
+}
+
+.footer-span {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #f1cdb3;
+    font-family: "Times New Roman", sans-serif;
+    padding-left: 10px;
+}
+
+.footer-span:nth-child(n+2) {
+    padding-top: 10px;
+}
+
+.footer-address {
+    display: flex;
+}
+
+.footer-contact-mail {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.footer-contact-phone {
+    padding-top: 10px;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .footer-img {
+        text-align: center;
+    }
+
+    .footer-location-h2, .footer-contact-mail, .footer-contact-phone {
+        text-align: center;
+    }
+
+    .footer-address {
+        justify-content: center;
+    }
+
+    .donation {
+        text-align: center;
+    }
+
+    .donation-card {
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .pets {
+        display: none !important;
+    }
+
+    .donation-description {
+        text-align: center;
+
+    }
+
+    .donation-card {
+        margin: auto;
+    }
+
+    .footer-img {
+        text-align: center;
+    }
+
+    .footer-location-h2, .footer-contact-mail, .footer-contact-phone {
+        text-align: center;
+    }
+
+    .footer-address {
+        justify-content: center;
+    }
+
+}
